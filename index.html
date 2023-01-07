@@ -8,9 +8,19 @@
     <script src="https://unpkg.com/vue@3"></script>
     <!-- Bootstrap core CSS -->
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/styles/styles.css" rel="stylesheet">
   </head>
   <body>
 
+    <div id="app">
+      <h1>Ok</h1>
+      
+    </div>
 
+    <script type="module">
+      import App from './App.js'
+      let app = Vue.createApp(App);
+      app.mount("#app");
+    </script>
   </body>
 </html>
