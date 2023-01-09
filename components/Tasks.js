@@ -1,5 +1,5 @@
 import TaskList from "./TaskList.js"
-import AddTask from "./AddTask.js"
+import AddTask from "./TaskAdd.js"
 export default{
     components:{
         TaskList,
@@ -11,7 +11,7 @@ export default{
 
     <task-list title="Completed" :tasks="filters.completed"></task-list>
     <hr>
-    <h2> Add a new task</h2>
+    <h4> Add a new task</h4>
     <add-task @addmytask="addTask"></add-task>
     </div>
     `,
@@ -19,10 +19,10 @@ export default{
     data(){
         return{
             tasks:[
-                {title: 'Task one', status: false, id: 1},
-                {title: 'Task two', status: false, id: 2},
-                {title: 'Task Three', status: false, id: 3},
-                {title: 'Task Four', status: false, id: 4},
+                {title: 'Task one', status: false, tag:'Math', id: 1},
+                {title: 'Task two', status: false, tag:'Science', id: 2},
+                {title: 'Task Three', status: false, tag:'Reading', id: 3},
+                {title: 'Task Four', status: false, tag:'Math', id: 4},
             ]
            
         }
